@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vídeo com Video.js</title>
+  <link href="https://vjs.zencdn.net/7.11.4/video-js.css" rel="stylesheet">
+  <script src="https://vjs.zencdn.net/7.11.4/video.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="#home">Início</a></li>
+      <li><a href="#">Sobre</a></li>
+      <li><a href="https://kiwify.app/fbO4Vb3?afid=Ivjwcv0r" target="_blank">Aula grátis</a></li>
+      <li><a href="https://api.whatsapp.com/send?phone=5516991963990&text=Oi%20estou%20com%20d%C3%BAvida%2C%20pode%20me%20ajudar" target="_blank">Contato</a></li>
+    </ul>
+    <a href="https://pay.kiwify.com.br/u8BeuuH?afid=Ivjwcv0r" target="_blank" class="aluno-btn">Quero ser aluno</a>
+  </nav>
+  
+  <section class="home" id="home">
+    <video autoplay muted loop class="video-background">
+      <source src="./assets/backgroundV.mp4" type="video/mp4">
+      Seu navegador não suporta vídeos HTML5.
+  </video>
+    <h2>muito mais que vender !</h2>
+    <h1>Como ganhar comissões no automático!</h1>
+    <p>Descubra como criar uma fonte de renda automática na internet, sem precisar aparecer.
+    </p>
+    <a href="https://pay.kiwify.com.br/u8BeuuH?afid=Ivjwcv0r" target="_blank" class="button">
+      Entrar na turma
+      <img src="./assets/icons/fireicon.png" class="icon" alt="">
+    </a>
+    <div class="video-container">
+      <iframe id="myVideo" class="video-js vjs-default-skin" 
+        width="100%" height="auto" 
+        src="https://www.youtube.com/embed/RVS5uRYdv0o" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+    </div>
+  </section>
+
+</body>
+  <script>
+    var player = videojs('myVideo');
+  </script>
+</html>
